@@ -16,5 +16,3 @@ $('.form').hide();
 function despliegueForm(){
     $('.form').slideToggle();
 }
-
-   
