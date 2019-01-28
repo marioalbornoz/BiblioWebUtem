@@ -69,8 +69,7 @@
                         <div style="width: 700px;">
                             <h1>BiblioWeb&nbsp;<small>UTEM</small></h1>
                         </div>
-                        <p>Perfil</p>
-                        <p>Carrera: PhpActua    </p>
+                        <p>Administrador de usuarios</p>
                     </div>
                     <div class="col-md-3">
                         <img src="assets/img/logoUtem.png" width="70" height="80">
@@ -78,28 +77,55 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <form>
-                            <div class="form-text">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name_usuario" placeholder="" >
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <div class="row">
+                            <div class="col-4">
+                                <button onclick="despliegueForm()" class="btn">Agregar usuarios </button>
+                                <div class="col form">
+                                     <form>
+                                            <div class="form-text">
+                                            <label for="name">Nombre</label>
+                                            <input type="text" class="form-control" id="name_usuario" placeholder="" >
+                                            <small id="emailHelp" class="form-text text-muted">Nombre del alumno.</small>
+                
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1">Correo electronico</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                     <small id="emailHelp" class="form-text text-muted">Ingrese correo UTEM</small>
+                                                    </div>
+                                            <div class="form-group">
+                                                <label for="selectorCarrera">Carrera</label>
+                                                <select class="form-control" id="formSelectorCarrera">
+                                                    <option>21030</option>
+                                                    <option>21040</option>
+                                                    <option>21075</option>
+                                                    <option>21020</option>
+                                                    <option>21060</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="selectorRol">Rol</label>
+                                                    <select class="form-control" id="formSelectorRol">
+                                                        <option>Usuario</option>
+                                                        <option>Moderador</option>
+                                                        <option>Administrador</option>
+                                                        </select>
+                                                </div>
+                                            <div class="form-group">
+                                                  <label for="exampleInputPassword1">Contraseña</label>
+                                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" readonly>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Agregar</rbutton>
+                                    </form>
 
+                                </div>
                             </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Correo electronico</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                
                             </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Contraseña</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" readonly>
-                            </div>
-                            <div class="form-group form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,6 +134,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="../inicio.js"></script>
 </body>
 
 </html>

@@ -12,4 +12,9 @@ function despliegue21075(){
     $('.Asignaturas21075').slideToggle();
 }
 
+$('.form').hide();
+function despliegueForm(){
+    $('.form').slideToggle();
+}
+
    
